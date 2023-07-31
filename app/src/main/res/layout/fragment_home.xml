@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="false">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:text="@string/title"-->
+    <!--        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/end_guideline"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/start_guideline"-->
+    <!--        app:layout_constraintHorizontal_bias="0"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/actor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="26dp"
+        app:constraint_referenced_ids="forum,archives,maps"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="8dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/forum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/family"/>
+    <Button
+        android:id="@+id/archives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/archives"/>
+
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/map"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_recent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/actor" />
+
+    <!--    <androidx.constraintlayout.helper.widget.Flow-->
+    <!--        android:id="@+id/actions"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        app:constraint_referenced_ids="like,watch,share"-->
+    <!--        app:flow_horizontalBias="0"-->
+    <!--        app:flow_horizontalGap="8dp"-->
+    <!--        app:flow_horizontalStyle="packed"-->
+    <!--        app:flow_verticalStyle="packed"-->
+    <!--        app:flow_wrapMode="chain"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/end_guideline"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/start_guideline"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/actors"-->
+    <!--        app:layout_constraintWidth_default="wrap" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

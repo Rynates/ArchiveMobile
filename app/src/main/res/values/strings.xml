@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Diploma</string>
+    <string name="forum">Forum</string>
+    <string name="archives">Archives</string>
+    <string name="support">Support</string>
+    <string name="title">Information</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="archives_helper">Genealogy Helper</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="forget_password">Forget password?</string>
+
+    <string name="notes">Notes</string>
+
+    <string name="left_switch">Left</string>
+    <string name="right_switch">Right</string>
+    <string name="username">UserName</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="continue_btn">Continue</string>
+    <string name="permission_description">Permission Description</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="map">Maps</string>
+    <string name="place">Place</string>
+    <string name="location">Location</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="help">Help</string>
+    <string name="notifications">Notifications</string>
+    <string name="version_0_0_1_alpha">Version 0.0.1 alpha</string>
+    <string name="language">Phone\'s language (%s)</string>
+    <string name="night_mode">Night mode</string>
+    <string name="signout">Sign Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="display_meters">%1$s m</string>
+    <string name="display_kilometers">%1$s km</string>
+    <string name="radius">Radius</string>
+    <string name="_500_0_m">500 m</string>
+    <string name="choose_a_radius_for_your_geofence">Choose a radius</string>
+    <string name="done">Done</string>
+    <string name="shared">shared</string>
+    <string name="name">Name</string>
+    <string name="family">Family</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_geo_found">No geo found</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="payment_method">Payment method</string>
+    <string name="cancel">Cancel</string>
+    <string name="donate">Donate</string>
+    <string name="sum">Sum</string>
+    <string name="address_title">Addres title</string>
+    <string name="choose_a_payment_method">Choose a payment method</string>
+    <string name="edit">Edit</string>
+    <string name="geofence">Create geofence</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="recent">Recent family card</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="add_new_relative_card">Add new relative card</string>
+    <string name="surname">Surname</string>
+    <string name="Ivan">Ivan</string>
+    <string name="Petrov">Petrov</string>
+    <string name="second_surname">Second surname</string>
+    <string name="second_name">Second name</string>
+    <string name="Minsk">Minsk</string>
+    <string name="helper">Helper</string>
+    <string name="save">Save</string>
+    <string name="birthPlace">BirthPlace</string>
+    <string name="placeOfLiving">Place of living</string>
+    <string name="livingStatus">Living Status</string>
+    <string name="bithDate">Birth date</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="something"> If you want to create a relative card then choose Button "Family" at the top of the screen.In order to find out about archives click on the button "Archives".If you want to create a geofence about a relative you are searching for choose button "Maps" </string>
+    <string name="search">Search</string>
+    <string name="who">Who</string>
+    <string name="where">Where</string>
+
+    <string name="facts">Facts</string>
+    <string name="update">Update</string>
+    <string name="info">Info</string>
+    <string name="time">Time</string>
+    <string name="createdBy">Created by</string>
+    <string name="when">When</string>
+    <string name="birthYear">Year from to</string>
+    <string name="year">Year</string>
+    <string name="range">Range</string>
+    <string name="searchByDate">Search by date</string>
+    <string name="enter_time">Enter date</string>
+    <string name="relatives">Relatives</string>
+    <string name="mother">Mother</string>
+    <string name="father">Father</string>
+    <string name="child">Child</string>
+    <string name="siblings">Siblings</string>
+    <string name="addRelativeLink">Add relative link</string>
+    <string name="fromYear">From</string>
+    <string name="to">To</string>
+    <string name="from">Year from</string>
+    <string name="enter_year_range">Enter year range</string>
+    <string name="enter_year_first">From</string>
+    <string name="inventory">Inventory</string>
+    <string name="searchByYear">Search by years range</string>
+    <string name="about">"Collections are a group of documents that share a common theme or origin.
+        For example, the state archive fund can display documents about the manifestations of figures, the identification of events, economic analyzes, etc.
+        Depending on the type of archive (zonal or republican) and its purpose, the structure may be more interesting or simpler.
+        Inventories are summary lists of documents that are found in each fund. Most assets have 1 inventory, but depending on the number of documents kept, the number of inventories may be higher.
+        Cases are documents found from the inventory that are in the archive. They can be presented in the form of letters, essays, books, photographs, etc. </string>
+    <string name="placeProfile">New York, USA</string>
+    <string name="alive">Alive</string>
+    <string name="deceased">Deceased</string>
+    <string name="reset">Reset</string>
+    <string name="searchHere">Search Here</string>
+    <string name="infoAboutResearch">info about your research</string>
+    <string name="close">Close</string>
+    <string name="ivanovich">Ivanovich</string>
+    <string name="chooseDate">Choose date</string>
+    <string name="link">Document Link</string>
+    <string name="narb">NARB</string>
+    <string name="niab">NIAB</string>
+    <string name="osa">OSA</string>
+</resources>

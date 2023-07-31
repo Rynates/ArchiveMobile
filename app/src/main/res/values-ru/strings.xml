@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <string name="app_name">Диплом</string>
+    <string name="forum">Форум</string>
+    <string name="archives">Архивы</string>
+    <string name="support">Поддержка</string>
+    <string name="title">Информация</string>
+    <string name="profile">Профиль</string>
+    <string name="home">Главная</string>
+    <string name="settings">Настройки</string>
+    <!-- Strings related to login -->
+
+    <string name="action_sign_in">Авторизация</string>
+    <string name="welcome">"Добро пожаловать!"</string>
+    <string name="invalid_username">Неверный юзернейм</string>
+    <string name="invalid_password">Пароль должен содержать более 5 символов</string>
+    <string name="login_failed">"Ошибка авторизации"</string>
+    <string name="title_activity_settings">Страница Настроек</string>
+
+    <string name="archives_helper">Архивный помощник</string>
+    <string name="action_sign_up">Регистрация</string>
+    <string name="forget_password">Забыли пароль?</string>
+
+    <string name="notes">Заметки</string>
+
+    <string name="left_switch">Лево</string>
+    <string name="right_switch">Право</string>
+    <string name="username">Имя</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+
+    <string name="action_settings">Настройік</string>
+    <string name="continue_btn">Дальше</string>
+    <string name="permission_description">Разрешение</string>
+    <string name="permission_required">Требуется разрешение</string>
+    <string name="map">Карта</string>
+    <string name="place">Место</string>
+    <string name="location">Местоположение</string>
+    <string name="back">Назад</string>
+    <string name="next">Дальше</string>
+    <string name="help">Помощь</string>
+    <string name="notifications">Уведомления</string>
+    <string name="version_0_0_1_alpha">Версия 0.0.alpha</string>
+    <string name="language">Язык\'s (%s)</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="signout">Выйти</string>
+    <string name="something">Если вы хотите создать карточку о своём родственнике,то выбирите в верхнем меню кнопку "Люди".Чтобы просмотреть информацию по архивам республики беларусь выбирите пункт "Архивы".Также вы можете создать геометку с информацией об искомом родственнике,перейдя на страницу "Карта".</string>
+    <string name="display_meters">%1$s м</string>
+    <string name="display_kilometers">%1$s км</string>
+    <string name="radius">Радиус</string>
+    <string name="_500_0_m">500 м</string>
+    <string name="choose_a_radius_for_your_geofence">Выбирите радиус</string>
+    <string name="done">Сделано</string>
+    <string name="family">Люди</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="second_name">Отчество</string>
+    <string name="father">Отец</string>
+    <string name="mother">Мать</string>
+    <string name="search">Поиск</string>
+    <string name="no_geo_found">Геометки не найдено</string>
+    <string name="coordinates">Координаты</string>
+    <string name="cancel">Выйти</string>
+    <string name="address_title">Адрес</string>
+    <string name="edit">Редактировать</string>
+    <string name="geofence">Создайте геометку</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Назад</string>
+    <string name="add">Добавить</string>
+    <string name="delete">Удалить</string>
+    <string name="add_new_relative_card">Создайте карточку о предке</string>
+    <string name="Ivan">Иван</string>
+    <string name="Petrov">Петров</string>
+    <string name="second_surname">Отчество</string>
+    <string name="Minsk">Минск</string>
+    <string name="helper">Помощник</string>
+    <string name="save">Сохранить</string>
+    <string name="birthPlace">Место рождения</string>
+    <string name="placeOfLiving">Местожительства</string>
+    <string name="livingStatus">Статус</string>
+    <string name="bithDate">Дата рождения</string>
+    <string name="gender">Пол</string>
+    <string name="female">Женский</string>
+    <string name="male">Мужской</string>
+    <string name="who">Кто</string>
+    <string name="where">Где</string>
+    <string name="alive">Жив</string>
+    <string name="deceased">Умер</string>
+    <string name="placeProfile">Беларусь,Минск</string>
+    <string name="facts">Факты</string>
+    <string name="update">Обновить</string>
+    <string name="info">Информация</string>
+    <string name="time">Время</string>
+    <string name="createdBy">Создал</string>
+    <string name="when">Когда</string>
+    <string name="birthYear">Примерный год рождения</string>
+    <string name="year">Год</string>
+    <string name="range">Промежуток</string>
+    <string name="searchByDate">Поиск по году рождения</string>
+    <string name="enter_time">Введите промежуток лет</string>
+    <string name="relatives">Родители</string>
+    <string name="child">Дети</string>
+    <string name="siblings">Сестры и браться</string>
+    <string name="addRelativeLink">Добавьте связь с родителем</string>
+    <string name="fromYear">От</string>
+    <string name="to">До</string>
+    <string name="from">Год от</string>
+    <string name="enter_year_range">Введи промежуток лет</string>
+    <string name="enter_year_first">От</string>
+    <string name="inventory">Опись</string>
+    <string name="searchByYear">Поиск по промежутку лет</string>
+    <string name="reset">Сбросить</string>
+    <string name="searchHere">Поиск по месту</string>
+    <string name="infoAboutResearch">Информация по поиску</string>
+    <string name="close">Закрыть</string>
+    <string name="ivanovich">Иванович</string>
+    <string name="chooseDate">Выбирите дату</string>
+    <string name="link">Ссылки на документы</string>
+    <string name="narb">Национальный архив республики Беларусь</string>
+    <string name="niab">Национальный исторический архив Беларуси</string>
+    <string name="osa">Оршанский зональный архив</string>
+    <string name="about">Фонды – это группа документов, которые имеют общую тему или проис-хождение.
+        Например, фонд государственного архива может включать докумен-ты о политических деятелях, исторических событиях, экономических анализов и т.д.
+        В зависимости от типа архива (зональный или республиканский) и его назначения, структура может быть более сложной или простой.
+        Описи – это подробные списки документов, которые содержатся в каждом фонде. Большинство фондов имеют 1 опись, но, в зависимости от количество со-хранённых документов, число описей может быть больше.
+        Дела – это конкретные документы из описи, которые хранятся в архиве. Они могут быть представлены в виде писем, очерков, книг, фотографий и т.д. </string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomImageView">
+        <attr name="onCenter" format="boolean"/>
+        <attr name="circle_background" format="color" />
+        <attr name="circle_radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageViewWithBorder">
+        <attr name="corner_radius" format="dimension|string" />
+        <attr name="border_width" format="dimension|reference" />
+        <attr name="border_color" format="color|reference" />
+    </declare-styleable>
+</resources>

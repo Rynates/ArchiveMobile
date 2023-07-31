@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/delete"
+        android:title="@string/delete" />
+    <item
+        android:id="@+id/update"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/update" />
+    <item
+        android:id="@+id/userProfile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/createdBy"/>
+    <item
+        android:id="@+id/relatives"
+        android:icon="@drawable/ic_community"
+        android:title="@string/relatives"/>
+</menu>

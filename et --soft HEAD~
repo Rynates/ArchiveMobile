@@ -1,0 +1,97 @@
+[33mcommit 39f9476463c49fe760088dd7cf17932292662139[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Rynates <mary.mash3f@gmail.com>
+Date:   Mon Jul 31 17:41:07 2023 +0300
+
+    add gms config
+
+:000000 100644 0000000 94a25f7 A	.idea/vcs.xml
+:000000 100644 0000000 54a2988 A	README.md
+:100644 100644 08949d4 8fbc121 M	app/src/main/java/com/example/helper/ui/familyFeature/FactsFragment.kt
+:100644 100644 24c13c3 eb1d71d M	app/src/main/res/values/google_maps_api.xml
+
+[33mcommit b7dc8485c909859b3f00be3a33171e0c5c07d691[m
+Author: Rynates <mary.mash3f@gmail.com>
+Date:   Mon Jul 31 16:13:21 2023 +0300
+
+    add existing project
+
+:000000 100644 0000000 aa724b7 A	.gitignore
+:000000 100644 0000000 26d3352 A	.idea/.gitignore
+:000000 100644 0000000 fb7f4a8 A	.idea/compiler.xml
+:000000 100644 0000000 df39334 A	.idea/gradle.xml
+:000000 100644 0000000 360e6d4 A	.idea/misc.xml
+:000000 100644 0000000 42afabf A	app/.gitignore
+:000000 100644 0000000 b7e4d37 A	app/build.gradle
+:000000 100644 0000000 481bb43 A	app/proguard-rules.pro
+:000000 100644 0000000 309e3e0 A	app/src/androidTest/java/com/example/helper/ExampleInstrumentedTest.kt
+:000000 100644 0000000 3d2cb52 A	app/src/main/AndroidManifest.xml
+:000000 100644 0000000 94043e2 A	app/src/main/archive-playstore.png
+:000000 100644 0000000 90c97ef A	app/src/main/family-playstore.png
+:000000 100644 0000000 f9e3202 A	app/src/main/java/com/example/helper/MyApp.kt
+:000000 100644 0000000 4da3ca9 A	app/src/main/java/com/example/helper/data/locale/FundDao.kt
+:000000 100644 0000000 0ba1fba A	app/src/main/java/com/example/helper/data/locale/FundDatabase.kt
+:000000 100644 0000000 0c70823 A	app/src/main/java/com/example/helper/data/locale/GeofenceDao.kt
+:000000 100644 0000000 dc09ef0 A	app/src/main/java/com/example/helper/data/locale/GeofenceDatabase.kt
+:000000 100644 0000000 38c65bc A	app/src/main/java/com/example/helper/data/locale/InventoryDao.kt
+:000000 100644 0000000 6eddfe2 A	app/src/main/java/com/example/helper/data/locale/InventoryDatabase.kt
+:000000 100644 0000000 753e733 A	app/src/main/java/com/example/helper/data/pagination/PagingConstants.kt
+:000000 100644 0000000 c2de2e3 A	app/src/main/java/com/example/helper/data/remote/KtorApi.kt
+:000000 100644 0000000 dd34aa4 A	app/src/main/java/com/example/helper/data/repository/ArchivesRepositoryImpl.kt
+:000000 100644 0000000 6f187a4 A	app/src/main/java/com/example/helper/data/repository/DataStoreRepository.kt
+:000000 100644 0000000 0c13bcb A	app/src/main/java/com/example/helper/data/repository/FamilyRepositoryImpl.kt
+:000000 100644 0000000 22a5f0f A	app/src/main/java/com/example/helper/data/repository/GeofenceRepository.kt
+:000000 100644 0000000 4965561 A	app/src/main/java/com/example/helper/data/repository/LoginRepositoryImpl.kt
+:000000 100644 0000000 4c4d4a7 A	app/src/main/java/com/example/helper/data/repository/MapsRepositoryImpl.kt
+:000000 100644 0000000 65fc3ce A	app/src/main/java/com/example/helper/data/repository/SignUpRepositoryImpl.kt
+:000000 100644 0000000 fb1b573 A	app/src/main/java/com/example/helper/data/repository/UserRepositoryImpl.kt
+:000000 100644 0000000 2d0d64d A	app/src/main/java/com/example/helper/di/ArchiveModule.kt
+:000000 100644 0000000 610a4e3 A	app/src/main/java/com/example/helper/di/DatabaseModule.kt
+:000000 100644 0000000 156d39d A	app/src/main/java/com/example/helper/di/DispatcherModule.kt
+:000000 100644 0000000 c168584 A	app/src/main/java/com/example/helper/di/FamilyModule.kt
+:000000 100644 0000000 31f6834 A	app/src/main/java/com/example/helper/di/LoginModule.kt
+:000000 100644 0000000 57ffef2 A	app/src/main/java/com/example/helper/di/MapModule.kt
+:000000 100644 0000000 4891273 A	app/src/main/java/com/example/helper/di/NetworkModule.kt
+:000000 100644 0000000 52fcc89 A	app/src/main/java/com/example/helper/di/SignUpModule.kt
+:000000 100644 0000000 575c416 A	app/src/main/java/com/example/helper/di/UserModule.kt
+:000000 100644 0000000 e419ea4 A	app/src/main/java/com/example/helper/domen/models/ApiRequest.kt
+:000000 100644 0000000 29881a8 A	app/src/main/java/com/example/helper/domen/models/ApiResponse.kt
+:000000 100644 0000000 23a6d89 A	app/src/main/java/com/example/helper/domen/models/Archive.kt
+:000000 100644 0000000 c4840a9 A	app/src/main/java/com/example/helper/domen/models/AuthRequest.kt
+:000000 100644 0000000 02ced5d A	app/src/main/java/com/example/helper/domen/models/AuthResponse.kt
+:000000 100644 0000000 d1cfecf A	app/src/main/java/com/example/helper/domen/models/AuthResult.kt
+:000000 100644 0000000 a7908f5 A	app/src/main/java/com/example/helper/domen/models/Document.kt
+:000000 100644 0000000 03a4666 A	app/src/main/java/com/example/helper/domen/models/Fund.kt
+:000000 100644 0000000 5df140d A	app/src/main/java/com/example/helper/domen/models/GeoFence.kt
+:000000 100644 0000000 2a7b66d A	app/src/main/java/com/example/helper/domen/models/RecentForum.kt
+:000000 100644 0000000 c53c374 A	app/src/main/java/com/example/helper/domen/models/Relative.kt
+:000000 100644 0000000 6f46264 A	app/src/main/java/com/example/helper/domen/models/RelativeResponce.kt
+:000000 100644 0000000 b1e3d6e A	app/src/main/java/com/example/helper/domen/models/User.kt
+:000000 100644 0000000 4b4381d A	app/src/main/java/com/example/helper/domen/repository/ArchivesRepository.kt
+:000000 100644 0000000 25fb263 A	app/src/main/java/com/example/helper/domen/repository/FamilyRepository.kt
+:000000 100644 0000000 519dc76 A	app/src/main/java/com/example/helper/domen/repository/LoginRepository.kt
+:000000 100644 0000000 7ced8ab A	app/src/main/java/com/example/helper/domen/repository/MapsRepository.kt
+:000000 100644 0000000 849baba A	app/src/main/java/com/example/helper/domen/repository/SignUpRepository.kt
+:000000 100644 0000000 46dd438 A	app/src/main/java/com/example/helper/domen/repository/UserRepository.kt
+:000000 100644 0000000 1ebcfe5 A	app/src/main/java/com/example/helper/ui/MainActivity.kt
+:000000 100644 0000000 7d1ebd2 A	app/src/main/java/com/example/helper/ui/archiveFeature/ArchivesAdapter.kt
+:000000 100644 0000000 ca323d3 A	app/src/main/java/com/example/helper/ui/archiveFeature/ArchivesFragment.kt
+:000000 100644 0000000 a3a780a A	app/src/main/java/com/example/helper/ui/archiveFeature/ArchivesViewModel.kt
+:000000 100644 0000000 9534cdf A	app/src/main/java/com/example/helper/ui/archiveFeature/InventoryAdapter.kt
+:000000 100644 0000000 aef303f A	app/src/main/java/com/example/helper/ui/archiveFeature/InventoryFragment.kt
+:000000 100644 0000000 c22f882 A	app/src/main/java/com/example/helper/ui/archiveFeature/NestedAdapter.kt
+:000000 100644 0000000 b2eec91 A	app/src/main/java/com/example/helper/ui/familyFeature/CustomSheetDialogFragment.kt
+:000000 100644 0000000 08949d4 A	app/src/main/java/com/example/helper/ui/familyFeature/FactsFragment.kt
+:000000 100644 0000000 fd3c79d A	app/src/main/java/com/example/helper/ui/familyFeature/FamilyAdapter.kt
+:000000 100644 0000000 a8dc00d A	app/src/main/java/com/example/helper/ui/familyFeature/FamilyFragment.kt
+:000000 100644 0000000 9d58973 A	app/src/main/java/com/example/helper/ui/familyFeature/FamilyViewModel.kt
+:000000 100644 0000000 f405267 A	app/src/main/java/com/example/helper/ui/familyFeature/RelativeLinkAdapter.kt
+:000000 100644 0000000 33ccd90 A	app/src/main/java/com/example/helper/ui/familyFeature/RelativeLinksFragment.kt
+:000000 100644 0000000 9a17878 A	app/src/main/java/com/example/helper/ui/familyFeature/SearchFragment.kt
+:000000 100644 0000000 456b327 A	app/src/main/java/com/example/helper/ui/familyFeature/TreeFragment.kt
+:000000 100644 0000000 dd62ab2 A	app/src/main/java/com/example/helper/ui/homeFeature/HomeFragment.kt
+:000000 100644 0000000 8190a30 A	app/src/main/java/com/example/helper/ui/homeFeature/HomeViewModel.kt
+:000000 100644 0000000 97f6234 A	app/src/main/java/com/example/helper/ui/homeFeature/RecentForumAdapter.kt
+:000000 100644 0000000 a1fd372 A	app/src/main/java/com/example/helper/ui/mapFeature/GeoFragment.kt
+:000000 100644 0000000 1e68329 A	app/src/main/java/com/example/helper/ui/mapFeature/MapsFragment.kt
+:000000 100644 0000000 c76824f A	app/src/main/java/com/example/helper/ui/mapFeature/MarkerInfoWindowAdapter.kt
+:000000 100644 0000000 26897bf A	app/src/main/java/com/example/helper/ui/mapFeature/PlacesFra

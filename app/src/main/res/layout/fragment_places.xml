@@ -1,0 +1,158 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore = "false">
+
+    <data>
+
+        <variable
+            name="sharedViewModel"
+            type="com.example.helper.ui.mapFeature.helpers.GeofenceViewModel" />
+
+        <variable
+            name="placesViewModel"
+            type="com.example.helper.ui.mapFeature.PlacesViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geofence_name_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/info"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geofence_time_textInputLayout"
+            app:layout_constraintVertical_bias="0.1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geofence_name_et"
+                enableNextButton="@{placesViewModel}"
+                updateGeofenceName="@{sharedViewModel}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="40" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geofence_time_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/from"
+            app:counterEnabled="true"
+            app:counterMaxLength="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geofence_location_textInputLayout"
+            app:layout_constraintVertical_bias="0.1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geofence_time_et"
+                updateGeofenceTime="@{sharedViewModel}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:inputType="number"
+                android:maxLength="4" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geofence_time2_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/to"
+            app:counterEnabled="true"
+            app:counterMaxLength="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/geofence_time_textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/geofence_location_textInputLayout"
+            app:layout_constraintVertical_bias="0.1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geofence_time2_et"
+                updateGeofenceTime2="@{sharedViewModel}"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:maxLength="4" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geofence_location_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geofence_location_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="16dp"
+                android:text="@{sharedViewModel.geoLocationName}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/predictions_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:layoutAnimation="@anim/recycler_layout_anim"
+            app:layout_constraintEnd_toEndOf="@+id/geofence_location_textInputLayout"
+            app:layout_constraintHeight_max="200dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/geofence_location_textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/geofence_location_textInputLayout" />
+
+        <TextView
+            android:id="@+id/placed_next"
+            nextButtonEnabled="@{placesViewModel.nextButtonEnabled}"
+            saveGeofenceId="@{sharedViewModel}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginBottom="32dp"
+            android:enabled="@{placesViewModel.nextButtonEnabled}"
+            android:text="@string/next"
+            android:textColor="@drawable/color_enabled_selector"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geofence_name_textInputLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

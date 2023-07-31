@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefreshLayout"
+    tools:viewBindingIgnore="false">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <!--    <ProgressBar-->
+    <!--        android:layout_width="217dp"-->
+    <!--        android:layout_height="260dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        style="@style/Widget.AppCompat.ProgressBar"-->
+    <!--        android:visibility="gone"/>-->
+
+        </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/archives"
+    app:startDestination="@id/archivesFragment">
+    <fragment
+        android:id="@+id/archivesFragment"
+        android:name="com.example.helper.ui.archiveFeature.ArchivesFragment"
+        android:label="ArchivesFragment"
+        tools:layout="@layout/fragment_archivas">
+        <action
+            android:id="@+id/action_archivesFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment">
+            <argument
+                android:name="fundId"
+                app:argType="string"
+                android:defaultValue="fundId"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.example.helper.ui.archiveFeature.InventoryFragment"
+        android:label="InventoryFragment"
+        tools:layout="@layout/fragment_inventory">
+        <argument
+            android:name="fundId"
+            app:argType="string"
+            android:defaultValue="fundId"/>
+        <action
+            android:id="@+id/action_inventoryFragment_to_archivesFragment"
+            app:destination="@id/archivesFragment" />
+    </fragment>
+</navigation>

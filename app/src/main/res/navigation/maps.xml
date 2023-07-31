@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maps"
+    app:startDestination="@id/mapsFragment">
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.helper.ui.mapFeature.MapsFragment"
+        android:label="MapsFragment"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapsFragment_to_placesFragment"
+            app:destination="@id/placesFragment" />
+        <argument
+            android:name="geofenceEntity"
+            app:argType="com.example.helper.domen.models.GeoFence"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+        <action
+            android:id="@+id/action_mapsFragment_to_geoFragment"
+            app:destination="@id/geoFragment" />
+        <action android:id="@+id/action_mapsFragment_to_profile"
+            app:destination="@+id/profile">
+            <argument
+                android:name="userName"
+                app:argType="string"
+                android:defaultValue="userId"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/permissionFragment"
+        android:name="com.example.helper.ui.mapFeature.helpers.PermissionFragment"
+        android:label="PermissionFragment"
+        tools:layout="@layout/fragment_permission">
+        <action
+            android:id="@+id/action_permissionFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_permissionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_permissionFragment_to_placesFragment"
+            app:destination="@id/placesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placesFragment"
+        android:name="com.example.helper.ui.mapFeature.PlacesFragment"
+        android:label="PlacesFragment"
+        tools:layout="@layout/fragment_places">
+        <action
+            android:id="@+id/action_placesFragment_to_radiusMapFragment"
+            app:destination="@id/radiusMapFragment" />
+        <action
+            android:id="@+id/action_placesFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radiusMapFragment"
+        android:name="com.example.helper.ui.mapFeature.RadiusMapFragment"
+        android:label="RadiusMapFragment"
+        tools:layout="@layout/fragment_radius_map">
+        <action
+            android:id="@+id/action_radiusMapFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_radiusMapFragment_to_placesFragment"
+            app:destination="@id/placesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/geoFragment"
+        android:name="com.example.helper.ui.mapFeature.GeoFragment"
+        android:label="GeoFragment"
+        tools:layout="@layout/fragment_geo">
+        <action
+            android:id="@+id/action_geoFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="geofencesEntity"
+            type="com.example.helper.domen.models.GeoFence" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{geofencesEntity.name}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/locationName_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/location"
+            app:layout_constraintStart_toStartOf="@+id/name_textView"
+            app:layout_constraintTop_toBottomOf="@+id/name_textView" />
+
+        <TextView
+            android:id="@+id/coordinates_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/coordinates"
+            app:layout_constraintStart_toStartOf="@+id/locationName_textView"
+            app:layout_constraintTop_toBottomOf="@+id/locationName_textView" />
+
+        <TextView
+            android:id="@+id/time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/time"
+            app:layout_constraintStart_toStartOf="@+id/coordinates_textView"
+            app:layout_constraintTop_toBottomOf="@+id/coordinates_textView" />
+
+        <TextView
+            android:id="@+id/locationValue_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:text="@{geofencesEntity.location}"
+            app:layout_constraintStart_toEndOf="@+id/locationName_textView"
+            app:layout_constraintTop_toTopOf="@+id/locationName_textView" />
+
+        <TextView
+            android:id="@+id/latitude_textView"
+            parseCoordinates="@{geofencesEntity.latitude}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/locationValue_textView"
+            app:layout_constraintTop_toBottomOf="@+id/locationValue_textView" />
+
+        <TextView
+            android:id="@+id/longitude_textView"
+            parseCoordinates="@{geofencesEntity.longitude}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/latitude_textView"
+            app:layout_constraintStart_toEndOf="@+id/latitude_textView"
+            app:layout_constraintTop_toTopOf="@+id/latitude_textView" />
+        <TextView
+            android:id="@+id/firstYear_textView"
+            android:text="@{geofencesEntity.time}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            app:layout_constraintBottom_toBottomOf="@+id/time_textView"
+            app:layout_constraintStart_toEndOf="@+id/time_textView"
+            app:layout_constraintTop_toTopOf="@+id/time_textView" />
+        <TextView
+            android:id="@+id/dotYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            app:layout_constraintBottom_toBottomOf="@+id/time_textView"
+            app:layout_constraintStart_toEndOf="@+id/firstYear_textView"
+            app:layout_constraintTop_toTopOf="@+id/time_textView" />
+        <TextView
+            android:id="@+id/firstSecond_textView"
+            android:text="@{geofencesEntity.year}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/time_textView"
+            app:layout_constraintStart_toEndOf="@+id/dotYear"
+            app:layout_constraintTop_toTopOf="@+id/time_textView" />
+        <TextView
+            android:id="@+id/txtOptionDigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="4dp"
+            android:text="&#8942;"
+            android:textAppearance="?android:textAppearanceLarge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimarySuperLight"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/time_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

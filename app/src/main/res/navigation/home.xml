@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/familyFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.example.helper.ui.homeFeature.HomeFragment"-->
+<!--        android:label="HomeFragment"-->
+<!--        tools:layout="@layout/fragment_home">-->
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_archivesFragment"-->
+<!--            app:destination="@id/archivesFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_permissionFragment"-->
+<!--            app:destination="@id/permissionFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_mapsFragment"-->
+<!--            app:destination="@id/mapsFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_familyFragment"-->
+<!--            app:destination="@id/familyFragment" />-->
+<!--    </fragment>-->
+
+
+    <fragment
+        android:id="@+id/familyFragment"
+        android:name="com.example.helper.ui.familyFeature.FamilyFragment"
+        android:label="FamilyFragment"
+        tools:layout="@layout/fragment_family">
+        <action
+            android:id="@+id/action_familyFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_familyFragment_to_factsFragment"
+            app:destination="@id/factsFragment" >
+            <argument
+                android:name="relativeId"
+                app:argType="string"
+                android:defaultValue="relativeId"/>
+        </action>
+        <argument
+            android:name="linkId"
+            app:argType="string"
+            android:defaultValue="linkId"/>
+        <argument
+            android:name="link"
+            app:argType="string"
+            android:defaultValue="link"/>
+        <action
+            android:id="@+id/action_familyFragment_to_relativeLinksFragment"
+            app:destination="@id/relativeLinksFragment">
+            <argument
+                android:name="linkId"
+                app:argType="string"
+                android:defaultValue="linkId"/>
+            <argument
+                android:name="link"
+                app:argType="string"
+                android:defaultValue="link"/>
+            <argument
+                android:name="chosedId"
+                app:argType="string"
+                android:defaultValue="chosedId"/>
+        </action>
+        <argument
+            android:name="relativeDocLink"
+            app:argType="string"
+            android:defaultValue="relativeDoc" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.helper.ui.familyFeature.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_familyFragment"
+            app:destination="@id/familyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/factsFragment"
+        android:name="com.example.helper.ui.familyFeature.FactsFragment"
+        android:label="FactsFragment"
+        tools:layout="@layout/fragment_facts">
+        <argument
+            android:name="relativeId"
+            app:argType="string"
+            android:defaultValue="relativeId"/>
+        <argument
+            android:name="linkId"
+            app:argType="string"
+            android:defaultValue="relativeId"/>
+        <action
+            android:id="@+id/action_factsFragment_to_familyFragment"
+            app:destination="@id/familyFragment" />
+        <action android:id="@+id/action_factsFragment_to_profileFragment"
+            app:destination="@+id/profileFragment2">
+            <argument
+                android:name="createdBy"
+                app:argType="string"
+                android:defaultValue="createdBy"/>
+        </action>
+        <action
+            android:id="@+id/action_factsFragment_to_relativeLinksFragment"
+            app:destination="@id/relativeLinksFragment" >
+            <argument
+                android:name="relativeId"
+                app:argType="string"
+                android:defaultValue="relativeId"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/relativeLinksFragment"
+        android:name="com.example.helper.ui.familyFeature.RelativeLinksFragment"
+        android:label="fragment_relative_links"
+        tools:layout="@layout/fragment_relative_links" >
+        <argument
+            android:name="link"
+            app:argType="string"
+            android:defaultValue="link"/>
+        <argument
+            android:name="chosedId"
+            app:argType="string"
+            android:defaultValue="chosedId"/>
+
+        <action
+            android:id="@+id/action_relativeLinksFragment_to_familyFragment"
+            app:destination="@id/familyFragment" >
+            <argument
+                android:name="link"
+                app:argType="string"
+                android:defaultValue="link"/>
+
+        </action>
+        <action
+            android:id="@+id/action_relativeLinksFragment_to_factsFragment"
+            app:destination="@id/factsFragment" >
+            <argument
+                android:name="linkId"
+                app:argType="string"
+                android:defaultValue="relativeId"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.helper.ui.profileFeature.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="createdBy"
+            app:argType="string"
+            android:defaultValue="createdBy"/>
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="userId"/>
+    </fragment>
+
+
+</navigation>

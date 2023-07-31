@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.helper.ui.profileFeature.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="userId"/>
+        <argument
+            android:name="createdBy"
+            app:argType="string"
+            android:defaultValue="createdBy"/>
+        <action
+            android:id="@+id/action_profileFragment_to_notesFragment"
+            app:destination="@id/notesFragment"/>
+       <action
+        android:id="@+id/action_profileFragment_to_mapsFragment"
+        app:destination="@id/mapsFragment">
+        <argument
+            android:name="geofenceEntity"
+            app:argType="com.example.helper.domen.models.GeoFence"
+            app:nullable="true"
+            android:defaultValue="@null" />
+       </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.helper.ui.profileFeature.NotesFragment"
+        android:label="NotesFragment"
+        tools:layout="@layout/fragment_notes">
+        <action
+            android:id="@+id/action_notesFragment_to_home"
+            app:destination="@id/home">
+            <argument
+                android:name="relativeDocLink"
+                app:argType="string"
+                android:defaultValue="relativeDoc" />
+        </action>
+
+    </fragment>
+</navigation>

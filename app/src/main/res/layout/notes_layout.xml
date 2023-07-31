@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:minHeight="70dp"
+    app:cardElevation="1dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/like_anim2"
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/heart_anim" />
+
+            <TextView
+                android:id="@+id/inventory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="Dummy text  "
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/inventoryFundNum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fundNum"
+                app:layout_constraintTop_toBottomOf="@+id/inventoryNum" />
+
+            <TextView
+                android:id="@+id/inventoryNameItemTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="Дело №"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/like_anim2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2" />
+
+            <TextView
+                android:id="@+id/inventoryFund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Опись №"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/inventoryNameItemTv"
+                app:layout_constraintTop_toBottomOf="@+id/inventoryNameItemTv" />
+
+            <TextView
+                android:id="@+id/inventoryNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 "
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/inventoryNameItemTv"
+                app:layout_constraintStart_toEndOf="@+id/inventoryNameItemTv"
+                app:layout_constraintTop_toTopOf="@+id/inventoryNameItemTv" />
+
+            <TextView
+                android:id="@+id/inventoryFundNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 "
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/inventoryFund"
+                app:layout_constraintStart_toEndOf="@+id/inventoryFund"
+                app:layout_constraintTop_toTopOf="@+id/inventoryFund" />
+
+            <TextView
+                android:id="@+id/fundNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 "
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/fund"
+                app:layout_constraintTop_toBottomOf="@+id/inventoryFund" />
+
+            <TextView
+                android:id="@+id/fund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фонд №"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/inventoryFund"
+                app:layout_constraintTop_toBottomOf="@+id/inventoryFund" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/documentRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
